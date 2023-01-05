@@ -13,15 +13,18 @@ rsort($unique);
 print_r($unique);
 
 
-echo "<table border='1'>";
-foreach($unique as $key => $value) {
-    ?>
+$a = 10;
+
+$a = $a + 1;
+
+?>
+<table>
+<?php foreach ($unique as $key => $value):?>
     <tr>
         <th><?= ++$key ?>
         </th>
         <td><?= $value ?></td>
     </tr>
+<?php endforeach;?>
 
-    <?php
-}
 
